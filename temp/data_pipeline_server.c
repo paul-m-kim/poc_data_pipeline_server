@@ -81,6 +81,11 @@
  * pthread_t
  * pthread_create()
  * pthread_join()
+ * pthread_mutex_lock
+ * pthreaD_mutex_unlock
+ * pthread_cond_wait
+ * pthread_cond_create
+ * pthread_cond_destroy
  * 
  */
 
@@ -121,7 +126,7 @@ void* socket_server_listen(void* port)
     struct sockaddr_in serv_addr, cli_addr;
     socklen_t clilen;
 
-    sockfd = scoket(AF_INET, SOCK_STREAM, 0);
+    sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if(sockfd < 0)
     {
         // error
@@ -134,7 +139,7 @@ void* socket_server_listen(void* port)
     serv_addr.sin_addr.s_addr = INADDR_ANY;
     serv_addr.sin_port = htons(portno);
 
-    if(bing(sockfd, (struct sockaddr *) &serv_addr , sizeor(serv_addr)) < 0)
+    if(bind(sockfd, (struct sockaddr *) &serv_addr , sizeof(serv_addr)) < 0)
     {
         // error
     }
@@ -213,7 +218,7 @@ void* socket_client_connect()
     bcopy((char*) server->h_addr, (char *) &serv_addr.sin_addr.s_addr, server->h_length);
     serv_addr.sin_port = htons(portno);
     
-    if(connect(sockfd, (struct scokaddr *) &serv_addr, sizeof(serv_addr)) < 0)
+    if(connect(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0)
     {
         // error
     }
@@ -252,7 +257,7 @@ void* socket_client_connect()
 int main(int argc, char **argv)
 {
 
-    
+
 
     return 0;
 

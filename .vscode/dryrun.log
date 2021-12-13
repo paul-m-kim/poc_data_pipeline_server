@@ -1,0 +1,6 @@
+make all --dry-run --keep-going --print-directory
+make: Entering directory '/home/rhythm/development/fortinet-assignment'
+gcc -g -Wall -std=c90 -c src/main.c -o obj/main.o
+gcc -g -Wall -std=c90  obj/main.o -o bin/main
+make: Leaving directory '/home/rhythm/development/fortinet-assignment'
+ 

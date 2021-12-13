@@ -1,6 +1,14 @@
 {
     "files.associations": {
         "in.h": "c",
-        "socket.h": "c"
-    }
+        "socket.h": "c",
+        "unity.h": "c"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/rhythm/development/fortinet-assignment/bin",
+            "binaryPath": "/home/rhythm/development/fortinet-assignment/bin/main",
+            "binaryArgs": []
+        }
+    ]
 }
