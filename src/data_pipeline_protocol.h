@@ -33,6 +33,8 @@
 
 typedef int (*dp_api_handler)(int argc, char **argv);
 
+
+
 // Not Implemented
 enum DPAPIErrors{
 
@@ -47,6 +49,8 @@ struct DPAPI{
     dp_api_handler func;
 
 } DPAPI;
+
+int dp_api_entry(int argc, char **argv);
 
 DP_API_DECLARATION(status)
 DP_API_DECLARATION(start)

@@ -2,7 +2,8 @@
     "files.associations": {
         "in.h": "c",
         "socket.h": "c",
-        "unity.h": "c"
+        "unity.h": "c",
+        "unistd.h": "c"
     },
     "makefile.launchConfigurations": [
         {

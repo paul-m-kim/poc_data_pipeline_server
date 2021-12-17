@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Dec 13 17:29:16 2021
+# Make data base, printed on Fri Dec 17 07:53:07 2021
 
 # Variables
 
@@ -41,7 +41,7 @@ BIN = $(BINDIR)/main
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /home/rhythm/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/node
+_ = /home/rhythm/.vscode-server/bin/fe719cd3e5825bf14e14182fddeb88ee8daf044f/node
 # makefile (from 'Makefile', line 12)
 CFLAGS = -g -Wall -std=c90
 # makefile (from 'Makefile', line 1)
@@ -63,13 +63,13 @@ VSCODE_CWD = /mnt/c/Users/paulm/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/rhythm/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/paulm/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/paulm/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+PATH = /home/rhythm/.vscode-server/bin/fe719cd3e5825bf14e14182fddeb88ee8daf044f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/paulm/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/paulm/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
 # environment
 XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-08248724-dbe2-415d-a5b6-b1978818e487.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-b05adba6-ce6a-4b08-91f1-a7b9a1e5ff22.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -85,7 +85,7 @@ PWD = /home/rhythm/development/fortinet-assignment
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/713_interop
+WSL_INTEROP = /run/WSL/11_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -131,7 +131,7 @@ NAME = AZUREDRAGON
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/paulm/.vscode/extensions/ms-vscode-remote.remote-wsl-0.63.5
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/paulm/.vscode/extensions/ms-vscode-remote.remote-wsl-0.63.13
 # default
 MAKE_COMMAND := make
 # makefile (from 'Makefile', line 21)
@@ -167,7 +167,7 @@ WAYLAND_DISPLAY = wayland-0
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH = /home/rhythm/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/remote/node_modules
+VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH = /home/rhythm/.vscode-server/bin/fe719cd3e5825bf14e14182fddeb88ee8daf044f/remote/node_modules
 # default
 .RECIPEPREFIX := 
 # environment
@@ -178,8 +178,10 @@ TERM = xterm-256color
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu
+# environment
+MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=84/1024=8%, Rehash=0, Collisions=11/140=8%
+# Load=85/1024=8%, Rehash=0, Collisions=11/141=8%
 
 # Pattern-specific Variable Values
 
@@ -187,11 +189,11 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2080, inode 42483): 15 files, no impossibilities.
+# . (device 2080, inode 42483): 17 files, no impossibilities.
 # src (device 2080, inode 51216): 7 files, no impossibilities.
 # tests (device 2080, inode 42337): 4 files, no impossibilities.
 
-# 26 files, no impossibilities in 3 directories.
+# 28 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
@@ -276,8 +278,8 @@ tests/bin:
 	mkdir $@
 
 # Not a target:
-obj/data_pipeline_protocol.o:
  
+obj/data_pipeline_protocol.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -285,7 +287,7 @@ obj/data_pipeline_protocol.o:
 # Not a target:
 src/main.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-12 18:53:57.369096855
+#  Last modified 2021-12-16 01:45:00.263255511
 #  File has been updated.
 #  Successfully updated.
 
@@ -339,12 +341,12 @@ obj/helper_sockets.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 42 / storage = 462 B / avg = 11 B
-# current buf: size = 8162 B / used = 462 B / count = 42 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 44 / storage = 486 B / avg = 11 B
+# current buf: size = 8162 B / used = 486 B / count = 44 / avg = 11 B
 
-# strcache performance: lookups = 69 / hit rate = 39%
+# strcache performance: lookups = 71 / hit rate = 38%
 # hash-table stats:
-# Load=42/8192=1%, Rehash=0, Collisions=3/69=4%
-# Finished Make data base on Mon Dec 13 17:29:16 2021
+# Load=44/8192=1%, Rehash=0, Collisions=3/71=4%
+# Finished Make data base on Fri Dec 17 07:53:07 2021
 
  
