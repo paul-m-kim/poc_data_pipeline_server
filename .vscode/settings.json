@@ -3,7 +3,8 @@
         "in.h": "c",
         "socket.h": "c",
         "unity.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "stdlib.h": "c"
     },
     "makefile.launchConfigurations": [
         {

@@ -9,7 +9,7 @@
 
 
 CC=gcc
-CFLAGS=-g -Wall -std=c90
+CFLAGS=-g -Wall -std=c99
 SRC=src
 OBJ=obj
 SRCS=$(wildcard $(SRC)/*.c)

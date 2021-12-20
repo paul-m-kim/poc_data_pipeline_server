@@ -1,21 +1,23 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
+#include "data_pipeline_server.h"
 
-#include <wordexp.h>
-#include <getopt.h>
-
-#include "helper_sockets.h"
-#include "data_pipeline_protocol.h"
-
-#define BUFFER_SIZE 4096
-#define PORT_NUMBER 8080
-
-void error(const char *msg)
+void example_task (void* input_package)
 {
-    perror(msg);
-    exit(1);
+    threadPkg *host_input = input_package;
+
+    int tid = pthread_self();
+
+    // connect to socket
+
+    while(host_input->cmd != thread_cmd_quit)
+    {
+
+        // wait for messages
+        // add SocketObject to queue when a new message is received
+
+    }
+
+    // close connection
+
 }
 
 int main (int argc, char **argv)

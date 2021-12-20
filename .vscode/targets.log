@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Dec 17 07:53:07 2021
+# Make data base, printed on Mon Dec 20 02:39:26 2021
 
 # Variables
 
@@ -41,9 +41,9 @@ BIN = $(BINDIR)/main
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /home/rhythm/.vscode-server/bin/fe719cd3e5825bf14e14182fddeb88ee8daf044f/node
+_ = /home/rhythm/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/node
 # makefile (from 'Makefile', line 12)
-CFLAGS = -g -Wall -std=c90
+CFLAGS = -g -Wall -std=c99
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # 'override' directive
@@ -63,13 +63,13 @@ VSCODE_CWD = /mnt/c/Users/paulm/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/rhythm/.vscode-server/bin/fe719cd3e5825bf14e14182fddeb88ee8daf044f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/paulm/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/paulm/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+PATH = /home/rhythm/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/paulm/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/paulm/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
 # environment
 XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-b05adba6-ce6a-4b08-91f1-a7b9a1e5ff22.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-2213c64e-b606-48be-b46c-94b576460032.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -167,7 +167,7 @@ WAYLAND_DISPLAY = wayland-0
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH = /home/rhythm/.vscode-server/bin/fe719cd3e5825bf14e14182fddeb88ee8daf044f/remote/node_modules
+VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH = /home/rhythm/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/remote/node_modules
 # default
 .RECIPEPREFIX := 
 # environment
@@ -189,11 +189,11 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2080, inode 42483): 17 files, no impossibilities.
-# src (device 2080, inode 51216): 7 files, no impossibilities.
+# . (device 2080, inode 42483): 19 files, no impossibilities.
+# src (device 2080, inode 51216): 10 files, no impossibilities.
 # tests (device 2080, inode 42337): 4 files, no impossibilities.
 
-# 28 files, no impossibilities in 3 directories.
+# 33 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
@@ -213,6 +213,33 @@ tests/bin/%: tests/%.C
 
 # Files
 
+obj/queue_sockets.o: src/queue_sockets.c src/queue_sockets.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'queue_sockets'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj/queue_sockets.o
+# automatic
+# % := 
+# automatic
+# * := queue_sockets
+# automatic
+# + := src/queue_sockets.c src/queue_sockets.h
+# automatic
+# | := 
+# automatic
+# < := src/queue_sockets.c
+# automatic
+# ^ := src/queue_sockets.c src/queue_sockets.h
+# automatic
+# ? := src/queue_sockets.c src/queue_sockets.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/15=7%
+#  recipe to execute (from 'Makefile', line 42):
+	$(CC) $(CFLAGS) -c $< -o $@
+
 all: bin/main
 #  Command line target.
 #  Implicit rule search has been done.
@@ -222,39 +249,18 @@ all: bin/main
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/5=0%
 
-obj/main.o: src/main.c
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'main'
-#  Last modified 2021-12-12 09:46:50.329139819
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := obj/main.o
-# automatic
-# % := 
-# automatic
-# * := main
-# automatic
-# + := src/main.c
-# automatic
-# | := 
-# automatic
-# < := src/main.c
-# automatic
-# ^ := src/main.c
-# automatic
-# ? := src/main.c
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/15=7%
-#  recipe to execute (from 'Makefile', line 45):
-	$(CC) $(CFLAGS) -c $< -o $@
-
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-12 09:26:50.32914139
+#  Last modified 2021-12-20 02:39:25.982452238
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+obj/data_pipeline_server.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 libs:
 #  Implicit rule search has not been done.
@@ -270,6 +276,14 @@ test: tests/bin tests/bin/buffer_circular_tests.o
 #  recipe to execute (from 'Makefile', line 60):
 	for test in $(TESTBINS) ; do ./$$test ; done
 
+# Not a target:
+src/queue_sockets.c:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-12-20 02:38:13.577
+#  File has been updated.
+#  Successfully updated.
+
 tests/bin:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -278,18 +292,17 @@ tests/bin:
 	mkdir $@
 
 # Not a target:
- 
+src/queue_sockets.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-20 02:39:19.182452154
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
 obj/data_pipeline_protocol.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-# Not a target:
-src/main.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-12-16 01:45:00.263255511
-#  File has been updated.
-#  Successfully updated.
 
 obj:
 #  Implicit rule search has not been done.
@@ -317,7 +330,7 @@ tests/bin/buffer_circular_tests.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-bin/main: obj/main.o obj/data_pipeline_protocol.o obj/helper_sockets.o
+bin/main: obj/queue_sockets.o obj/data_pipeline_server.o obj/data_pipeline_protocol.o obj/helper_sockets.o
 #  Implicit rule search has not been done.
 #  Last modified 2021-12-12 09:46:50.359139819
 #  File has been updated.
@@ -334,19 +347,19 @@ obj/helper_sockets.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=15/1024=1%, Rehash=0, Collisions=0/38=0%
+# Load=17/1024=2%, Rehash=0, Collisions=0/41=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 44 / storage = 486 B / avg = 11 B
-# current buf: size = 8162 B / used = 486 B / count = 44 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 50 / storage = 679 B / avg = 13 B
+# current buf: size = 8162 B / used = 679 B / count = 50 / avg = 13 B
 
-# strcache performance: lookups = 71 / hit rate = 38%
+# strcache performance: lookups = 77 / hit rate = 35%
 # hash-table stats:
-# Load=44/8192=1%, Rehash=0, Collisions=3/71=4%
-# Finished Make data base on Fri Dec 17 07:53:07 2021
+# Load=50/8192=1%, Rehash=0, Collisions=3/77=4%
+# Finished Make data base on Mon Dec 20 02:39:26 2021
 
  

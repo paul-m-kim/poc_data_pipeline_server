@@ -28,12 +28,12 @@
 #include <unistd.h> // getopt()
 #include <string.h>
 
+#include "data_pipeline_server.h"
+
 #define DP_API_DECLARATION(CALL) int dp_api_handler_ ## CALL(int argc, char **argv);
 #define DP_API_ADD(CALL) {.call = #CALL, .func = &dp_api_handler_ ## CALL}
 
 typedef int (*dp_api_handler)(int argc, char **argv);
-
-
 
 // Not Implemented
 enum DPAPIErrors{
