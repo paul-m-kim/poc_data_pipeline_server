@@ -50,7 +50,7 @@ struct DPAPI{
 
 } DPAPI;
 
-int dp_api_entry(int argc, char **argv);
+int dp_api_service(int argc, char **argv);
 
 DP_API_DECLARATION(status)
 DP_API_DECLARATION(start)

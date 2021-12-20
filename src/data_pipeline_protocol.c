@@ -1,6 +1,6 @@
 #include "data_pipeline_protocol.h"
 
-int dp_api_entry(int argc, char **argv)
+int dp_api_service(int argc, char **argv)
 {
 
     int opt;

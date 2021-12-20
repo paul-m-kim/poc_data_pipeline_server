@@ -1,5 +1,19 @@
 #include "data_pipeline_server.h"
 
+/**
+ * TODO:
+ * 
+ * Essentials:
+ * - Complete queue_sockets
+ * - Complete (threaded) data source connecting function
+ * - Complete dp_api_handler_add()
+ * - Complete dp_api_service() for main loop
+ * 
+ * Priority:
+ * - data_pipeline_protocol
+ * 
+ */
+
 void example_task (void* input_package)
 {
     threadPkg *host_input = input_package;
@@ -86,11 +100,7 @@ int main (int argc, char **argv)
 
     }
 
-    
-
     printf("%s", buffer_recv);
-
-
 
     return 0;
 

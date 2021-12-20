@@ -1,9 +1,9 @@
-make all --dry-run --keep-going --print-directory
-make: Entering directory '/home/rhythm/development/fortinet-assignment'
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/rhythm/development/poc_data_pipeline_server'
 gcc -g -Wall -std=c99 -c src/queue_sockets.c -o obj/queue_sockets.o
 gcc -g -Wall -std=c99 -c src/data_pipeline_server.c -o obj/data_pipeline_server.o
 gcc -g -Wall -std=c99 -c src/data_pipeline_protocol.c -o obj/data_pipeline_protocol.o
 gcc -g -Wall -std=c99 -c src/helper_sockets.c -o obj/helper_sockets.o
 gcc -g -Wall -std=c99  obj/queue_sockets.o  obj/data_pipeline_server.o  obj/data_pipeline_protocol.o  obj/helper_sockets.o -o bin/main
-make: Leaving directory '/home/rhythm/development/fortinet-assignment'
+make: Leaving directory '/home/rhythm/development/poc_data_pipeline_server'
  
