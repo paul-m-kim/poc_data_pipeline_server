@@ -26,6 +26,8 @@ Arbitrary steps to move data from the source system to the target system. If con
 ### **Data Source Server**
 For the purposes of this project, the data source server will load a file formatted .csv or .json at startup and respond to queries from its clients
 
+https://github.com/paul-m-kim/poc_data_pipeline_source
+
 ### **Data Pipeline Server**
 At initialization, the server waits for a client connection.
 
@@ -45,6 +47,7 @@ https://github.com/paul-m-kim/poc_data_pipeline_source
 
 ### **Client**
 Simple TCP socket client that communicates with the Data Pipline Server via a Custom API
+
 https://github.com/paul-m-kim/poc_data_pipeline_client
 ## **Development Environment Setup**
 ### Setting up the Unix Environment ###
