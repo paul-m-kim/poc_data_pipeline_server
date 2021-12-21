@@ -43,7 +43,6 @@ Once a client connects, the client can add data sources through the Custom Data 
     - Using REST API (non-persistent / stateless connection)
 
 Each time a data is queried/received, it is put into the message queue and sent to the client.
-https://github.com/paul-m-kim/poc_data_pipeline_source
 
 ### **Client**
 Simple TCP socket client that communicates with the Data Pipline Server via a Custom API
